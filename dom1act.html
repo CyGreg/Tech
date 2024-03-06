@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -86,14 +86,52 @@
                 var a = document.getElementsByTagName('th');
                 var b = document.getElementsByTagName('td');
                 var rezp, rezk;
-                rezp = 15;
+                var m_start = [0,3,4];
+                var m_dl = [31,29,31];
+                var wybor = prompt("Proszę podać nr miesiąca: ");
+                rezp = 17;
                 rezk = 20;
     
                 for(var i=0;i<a.length;i++)
                   a[i].className = 'prom1';
-                
-                
-                  
+
+                for(var k=5,l=6;k<b.length,l<b.length;k=k+7,l=l+7)
+                {
+                  if(+(b[k].textContent)>0 ||+(b[l].textContent)>0 )
+                  {
+                    b[k].className = 'prom1';
+                    b[l].className = 'prom1';
+                  }
+                }
+
+                for(i=0;i<b.length;i++)
+                {
+                  b[i].textContent = "";
+                }
+
+                switch(wybor)
+                {
+                  case '1':
+                    for(i=0;i<m_dl[0];i++)
+                      {
+                        b[i+m_start[0]].textContent = i+1;
+                      }
+                    break;
+                  case '2':
+                    for(i=0;i<m_dl[1];i++)
+                      {
+                        b[i+m_start[1]].textContent = i+1;
+                      }
+                    break;
+                  case '3':
+                    for(i=0;i<m_dl[2];i++)
+                      {
+                        b[i+m_start[2]].textContent = i+1;
+                      }
+                    break;
+                  default:
+                }
+    
                 for(var j=0;j<b.length;j++){
                   if(+(b[j].textContent) > rezp && +(b[j].textContent) < rezk)
                     b[j].className = 'prom';
