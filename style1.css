@@ -1,0 +1,185 @@
+﻿body
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    background-color: #545CEB;
+    color: #EBCC54;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+}
+#kontener
+{
+    width:1000px;
+    height:800px;
+    margin:0px auto auto auto;
+}
+#baner {
+    width: 998px;
+    height: 98px;
+    margin-bottom:5px;
+    border: 1px outset #181e8d;
+    background-color: #292F9E;
+
+}
+#logo {
+    width: 198px;
+    height: 78px;
+    border: 1px outset #181e8d;
+    margin-right: 5px;
+    float: left;
+    margin: 2px 5px 2px 2px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+    padding-top:14px;
+    background-color: #545CEB;
+}
+#tytul {
+    width: 787px;
+    height: 82px;
+    border: 1px outset #181e8d;
+    float: left;
+    margin: 2px 2px 2px 0px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+    padding-top:10px;
+    letter-spacing: 20px;
+    background-color: #545CEB;
+
+}
+#tytul:first-letter{
+    color: red;
+
+}
+#menu {
+    width: 998px;
+    height: 48px;
+    border: 1px outset #181e8d;
+    margin-bottom: 5px;
+    background-color: #292F9E;
+}
+/*.mp
+{
+    width:248px;
+    height:32px;
+    float:left;
+    text-align:center;
+    padding-top:16px;
+}*/
+.mp{
+    width: 248px;
+    height: 48px;
+    float: left;
+    
+}
+p.aaa {
+    width: 248px;
+    height: 48px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+#tresc {
+    width: 910px;
+    height: 303px;
+    border: 1px outset #181e8d;
+    padding:150px 44px 150px 44px;
+    margin-bottom: 5px;
+    background-color: #292F9E;
+}
+
+/*.kategoria {
+    width: 298px;
+    height: 165px;
+    border: 1px groove black;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    font-size:2em;
+    padding-top:133px;
+}*/
+.kategoria {
+    width: 298px;
+    height: 298px;
+    border: 1px outset #181e8d;
+    float: left;
+    margin-right: 5px;
+    font-size: 2em;
+    background-color: #545CEB;
+}
+.kategoria p {
+    width: 298px;
+    height: 298px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#stopka{
+    width: 998px;
+    height: 22px;
+    border: 1px outset #181e8d;
+    padding-top: 6px;
+    background-color: #292F9E;
+}
+/*.logo{
+    height: 70px;
+    text-align: center;
+    font-size: 3em;
+    padding-top:22px;
+}*/
+p.aaa a{
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 248px;
+    height: 48px;
+}
+a:link{
+    color: #EBCC54;
+}
+a:active{
+    color: #FCDD65 ;
+}
+a:visited{
+    color: #9E8319;
+}
+a:hover{
+    background-color: #545CEB;
+}
+form{
+    font-size: 1.5em;
+   
+}
+#zamowienie{
+    width: 400px;
+    margin: auto auto auto auto;
+    background-color: #545CEB;
+    border: 1px outset #181e8d;
+    padding: 30px 30px 30px 30px;
+}
+h1{
+    text-align: center;
+}
+#galer_pod{
+    width: 800px;
+    height: 583px;
+    margin: 10px auto 10px auto;
+    background-color:#545CEB;
+    overflow: scroll;
+}
+.miniatura{
+    width: 246px;
+    height: 196px;
+    border: 2px outset black;
+    margin: 5px;
+    float: left;
+   
+}
+img{
+    width: 246px;
+    height: 196px;
+}
