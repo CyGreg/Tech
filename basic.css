@@ -1,0 +1,91 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #C0C0C0;
+	color: #FFFFFF;
+}
+#podst{
+	width:1000px;
+	min-height:800px;
+	background-color:#17207F;
+	margin:0 auto 0 auto;
+}
+#naglowek{
+	width:998px;
+	min-height:100px;
+	background-color:#17207F;
+	margin:0 auto 0 auto;
+	border:1px white solid;
+}
+#tresc{
+	padding: 15px;
+	width: 968px;
+	min-height: 630px;
+	background-color: #2c37aa;
+	margin: 18px auto 0 auto;
+	border: 1px white solid;
+}
+#wynik,#wynik1 {
+	width: 500px;
+	min-height: 100px;
+	border: 1px white solid;
+	margin: 25px auto auto auto;
+	padding:15px 5px 5px 5px;
+}
+.pole_txt{
+	background-color:yellow;
+	color:red;
+}
+#zad1,#zad2,#zad3 {
+	width: 500px;
+	min-height: 100px;
+	border: 1px white solid;
+	margin: 25px auto auto auto;
+	padding:15px 5px 5px 5px;
+}
+li{
+	display: block;
+	width: 250px;
+	height: 20px;
+	padding: 5px 0px 0px 5px;
+	border: #2c37aa 1px outset;
+	text-shadow: 1px 1px 2px black;
+	text-align: center;
+}
+.prom{
+	background-color: red;
+	border: #2c37aa 1px inset;
+}
+.prom_w{
+	background-color: rgb(255, 0, 179);
+	border: #2c37aa 1px inset;
+}
+.prom1{
+	background-color:yellow;
+	border: #2c37aa 1px inset;
+	color: #17207F;
+}
+table,th,td{
+	border: #2c37aa 1px outset;
+}
+td{
+	background-color: #17207F;
+}
+#z1,#z2,#z3{
+	width: 50%;
+	height: 100px;
+	background-color:#4D1DE0;
+	border: 1px outset #5E2EF1;
+	margin: 0px auto 5px auto;
+}
+
+#z1_1,#z2_1,#z3_1{
+	width: 90%;
+	height: 70px;
+	background-color:#D89979;
+	border: 1px inset #E9AA8A;
+	margin: 5px auto auto auto;
+	color: #4D1DE0;
+	padding: 5px;
+	text-shadow: #010101 1px 1px 2px;
+	text-align: center;
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="basic.css" />
+  <script>
+    function informacja1(info,uchwyt)
+    {
+        uchwyt.textContent = info;
+    }
+  </script>
+</head>
+
+<body>
+  <div id="podst">
+	<div id="naglowek">
+	  <h1 id="tytul">Ćwiczenia z JavaScript</h1>
+	</div>
+		
+	<div id="tresc">
+	    
+		<div id="zad1">
+            <div id="z1">
+                <div id="z1_1"></div>
+                <script>
+                  var wyniki = [];
+                  var uchwyt;
+                    
+                  function obliczenia()
+                  {
+                    uchwyt = document.getElementById('z1_1');
+                    //uchwyt.textContent = 2+2;
+                    wyniki[0] = 2+2;
+                    wyniki[1] = 2-2;
+                    wyniki[2] = 2*2;
+                    wyniki[3] = 2/2;
+                    uchwyt.textContent = wyniki[0]+"->"+wyniki[1]+"->"+wyniki[2]+"->"+wyniki[3];
+                  }
+                  function zm_lok()
+                  {
+                    var info = "To jest zmienna lokalna";
+                    alert(info);
+                  }
+                  //var wszystkie = 100;
+                  function wolne_pokoje(zajente)
+                  {
+                    var wszystkie = 100;
+                    wszystkie = wszystkie-zajente;
+                    return wszystkie
+                  }
+                  
+                  var info1 = "To jest zmienna globalna";
+                  //obliczenia();
+                  //zm_lok();
+                  //confirm(info1);
+                  document.getElementById('z1_1').innerHTML ="Wolne pokoje <br/><hr width=\"70%\"/>"+wolne_pokoje(5);
+                  document.getElementById('z1_1').innerHTML ="Wolne pokoje <br/><hr width=\"70%\"/>"+wolne_pokoje(10);
+                </script>
+            </div>
+            
+            
+	    </div>
+        <div id="zad2">
+            <div id="z2">
+                <div id="z2_1"></div>
+                <script>
+                  var text = "Wyprzedaż 15% na oznaczone produkty";
+                  var info_f = document.getElementById('z2_1');
+                  function informacja()
+                  {
+                      info_f.textContent = text;
+                  }
+                  informacja();
+              </script>
+            </div>
+            
+        </div>
+        <div id="zad3">
+            <div id="z3">
+                <div id="z3_1"></div>
+                <script>
+                  var text1 = "10% rabatu za subskrybcję naszego newsletter-a";
+                  var info_f1 = document.getElementById('z3_1');
+                  informacja1(text1,info_f1);
+              </script>
+            </div>
+        </div>
+    </div>
+   
+   
+  </div>
+
+</body>
+
+</html>

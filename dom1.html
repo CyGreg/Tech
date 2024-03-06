@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+
+<body>
+  <div id="podst">
+	<div id="naglowek">
+	  <h1 id="tytul">Ćwiczenia z JavaScript</h1>
+	</div>
+		
+	<div id="tresc">
+	    
+		<div id="zad1">
+        <ul>
+          <li id="p1" class="prom">Produkt 1</li>
+          <li id="p2">Produkt 2</li>
+          <li id="p3" class="prom">Produkt 3</li>
+          <li id="p4">Produkt 4</li>
+          <li id="p5">Produkt 5</li>
+        </ul>    
+        <script>
+            var a,b,c,d;
+            //
+            a = document.getElementById('p1');//wybiera konkretny element po id
+            document.write(a+"<br/>");
+            b = document.getElementsByTagName('li');//wybiera wszystkie elementy o danym tag-u
+            document.write(b+"<br/>");
+            c = document.getElementsByClassName('prom');//wybiera wszystkie elementy na podstawie klasy
+            document.write(c+"<br/>");
+            var temp = b.item(0).textContent;
+            document.write(temp+"<br/>");
+            a.className = 'prom1';
+            d = document.querySelectorAll('li[id]');
+            document.write(d+"<br/>")
+        </script>
+		
+	    </div>
+        <div id="zad2">
+          <ul>
+            <li id="pr1" class="prom">Produkt 6</li>
+            <li id="pr2" class="prom">Produkt 7</li>
+            <li id="pr3" class="prom">Produkt 8</li>
+            <li id="pr4" class="prom">Produkt 9</li>
+            <li id="pr5" class="">Produkt 10</li>
+          </ul>
+          <script>
+            var ast;
+            ast = document.getElementById('pr2');
+            var temp = document.querySelectorAll('li.prom')
+           
+            for (var i = 1;i<temp.length;i++)
+            {
+              temp[i].className = 'prom1';
+            }
+            
+          </script>    
+        </div>
+        <div id="zad3">
+          <form>
+            <select name="miesiace">
+              <option value="1">Styczeń</option>
+              <option value="2">Luty</option>
+              <option value="3">Marzec</option>
+              <option value="4">Kwiecień</option>
+              <option value="5">Maj</option>
+              <option value="6">Czerwiec</option>
+              <option value="7">Lipiec</option>
+              <option value="8">Sierpień</option>
+              <option value="9">Wrzesień</option>
+              <option value="10">Październik</option>
+              <option value="11">Listopad</option>
+              <option value="12">Grudzień</option>
+            </select>
+          </form>
+          <table>
+            <tr>
+              <th>pon</th><th>wto</th><th>śro</th><th>czw</th><th>pią</th><th>sob</th><th>nie</th>
+            </tr>
+            <tr>
+              <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+            </tr>
+            <tr>
+              <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+            </tr>
+            <tr>
+              <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+            </tr>
+            <tr>
+              <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            </tr>
+            <tr>
+              <td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td>
+            </tr>
+          </table>
+          <script>
+            var a = document.getElementsByTagName('th');
+            var b = document.getElementsByTagName('td');
+            var rezp, rezk;
+            rezp = 15;
+            rezk = 20;
+
+            for(var i=0;i<a.length;i++)
+              a[i].className = 'prom1';
+
+            for(var j=0;j<b.length;j++){
+              if(+(b[j].textContent) > rezp && +(b[j].textContent) < rezk)
+                b[j].className = 'prom';
+              else
+              {
+                if(+(b[j].textContent) == rezp || +(b[j].textContent) == rezk)
+                  b[j].className = 'prom_w';
+              }
+              
+    
+            }
+            
+          </script>
+        </div>
+    </div>
+   
+   
+  </div>
+
+</body>
+
+</html>
