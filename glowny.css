@@ -1,0 +1,107 @@
+body{
+	font-family: Calibri;
+	background-color: #000561;
+	color: rgb(153, 158, 217);
+	font-size: 1.5em;
+}
+#glowny{
+	width: 1000px;
+	height: 1000px;
+	background-color: #00078A;
+	margin: 0px auto auto auto;
+}
+#naglowek{
+	width: 998px;
+	height: 194px;
+	border: 1px white solid;
+	margin-bottom: 2px;
+	text-align: center;
+	font-size: 4em;
+	font-weight: 700;
+	letter-spacing: 10px;
+	padding-top: 26px;
+}
+
+#naglowek::first-letter{
+	font-size: 1.5em;
+	color: yellow;
+	text-shadow: 3px 3px 3px black;
+}
+
+
+#menu{
+	width: 998px;
+	height: 98px;
+	border: 1px white solid;
+}
+#tresc{
+	width: 958px;
+	height: 598px;
+	border: 1px white solid;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding: 15px 20px 15px 20px;
+	overflow: auto;
+	
+}
+#stopka{
+	width: 958px;
+	height: 38px;
+	border: 1px white solid;
+	padding: 5px 20px 5px 20px;
+}
+.menu_p{
+	width: 248px;
+	height: 98px;
+	float: left;
+	text-align: center;
+	border-right: 1px white solid;
+	/*padding-top: 39px;*/
+}
+
+/*.menu_p:hover{
+	background-color: red;
+	color: black;
+}*/
+
+
+
+.menu_p a:link,a:active,a:visited,a:hover{
+	display: block;
+	padding-top: 31px;
+	height: 67px;
+}
+
+a:link{
+	text-decoration: none;
+	color: rgb(153, 158, 217);
+	
+}
+a:active{
+	text-decoration: none;
+	color: yellow;
+}
+a:visited{
+	text-decoration: none;
+	color: red;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+	background-color: red;
+	display: block;
+	width: 248px;
+	height: 98px;
+}
+label{
+	display: block;
+	width: 150px;
+	float: left;
+}
+input{
+	
+	/*width: 150px;*/
+	size: 5;
+	
+	float: left;
+}
